@@ -50,6 +50,10 @@ body{
     color: #5591CD;
 }
 
+.fontGreen{
+    color: #00A169;
+}
+
 .regular{
     font-weight: 400;
 }
@@ -234,22 +238,6 @@ nav.mainNav ul li ul.subMenu{
     display: block;
 }
 
-/*
-@keyframes cambio{
-    0%{margin-left: -250%;}
-    25%{margin-left: -250%;}
-    
-    30%{margin-left: -750%;}
-    55%{margin-left: -750%;}
-    
-    60%{margin-left: -1250%;}
-    85%{margin-left: -1250%;}
-    
-    90%{margin-left: -1750%;}
-    100%{margin-left: -1750%;}
-}
-*/
-
 .sliderFrame{
     /*position: relative;*/
 }
@@ -326,7 +314,7 @@ nav.mainNav ul li ul.subMenu{
     text-align: center;
 }
 
-.contentMain h3{
+.slogan{
     padding: 2em 0;
 }
 
@@ -334,7 +322,6 @@ nav.mainNav ul li ul.subMenu{
 
 
 /* -Home Industrias- */
-
 li.industriasItem{
     border: solid 1px #C4D9F2;
     border-radius: 3px;
@@ -404,6 +391,82 @@ div.industriasIcon img{
     max-height: 2.9em;
 }
 
+
+
+
+/* -Home Productos- */
+.productosItem{
+    border: 1px solid #C4D9F2;
+    border-radius: 3px;
+    margin-bottom: 2em;
+}
+
+.productosItem:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.cabecera h3,
+.cabecera a{
+    margin: auto;
+}
+
+.cabecera>a{
+    order: 2;
+    margin-top: 2em
+}
+
+.entryPage:hover,
+.entryPage:hover i{
+    color: #33699f;
+}
+
+.productosList{
+    margin: auto;
+    margin-top: 2.5em;
+}
+
+figure.productosImage{
+    margin: 0
+}
+
+.productosImage img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.productosInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #E1F0FC;
+    padding: .8em;
+}
+
+.productosIcon img{
+    max-height: 2.2em;
+    border-right: 1px #5591CD solid;
+    padding: 0 .8em;
+    
+}
+
+.productosInfo h4{
+    flex: 1;
+    text-align: start;
+    padding: 0 .8em;
+    font-size: 1em;
+    display: flex;
+    align-content: center;
+    margin: 0;
+}
 
 
 
@@ -600,6 +663,39 @@ div.industriasIcon img{
         min-height: 260px;
     }
     
+    /* -Home Productos- */
+    .productosItem{
+        margin-bottom: 0;
+    }
+    
+    .cabecera{
+        align-items: baseline;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .cabecera h3,
+    .cabecera>a{
+        width: 50%;
+    }
+    
+    .cabecera h3{
+        text-align: start;
+    }
+    
+    .cabecera>a{
+        text-align: end;
+        order: 0;
+    }
+    
+    .productosList{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .productosList li{
+        width: 24%;
+    }
 }
 
 @media(min-width: 62em){
