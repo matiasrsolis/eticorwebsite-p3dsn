@@ -234,6 +234,7 @@ nav.mainNav ul li ul.subMenu{
     display: block;
 }
 
+/*
 @keyframes cambio{
     0%{margin-left: -250%;}
     25%{margin-left: -250%;}
@@ -247,6 +248,7 @@ nav.mainNav ul li ul.subMenu{
     90%{margin-left: -1750%;}
     100%{margin-left: -1750%;}
 }
+*/
 
 .sliderFrame{
     /*position: relative;*/
@@ -552,7 +554,7 @@ div.industriasIcon img{
         max-width: 50%;
     }
     
-    @keyframes cambio{
+    /*@keyframes cambio{
         0%{margin-left: -0%;}
         25%{margin-left: -0%;}
 
@@ -564,7 +566,7 @@ div.industriasIcon img{
 
         90%{margin-left: -300%;}
         100%{margin-left: -300%;}
-    }
+    }*/
     
     .linealWhiteButton {
         
