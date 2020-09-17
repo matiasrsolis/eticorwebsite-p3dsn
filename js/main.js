@@ -6,5 +6,10 @@ $(document).ready(function() {
     $(".btnSection").click(function(){
         
         $(this).children("ul").slideToggle();
+    });
+    
+    $('.carousel').carousel({
+      interval: 2000
     })
 });
+
