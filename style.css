@@ -106,6 +106,20 @@ i.fas.fa-caret-right {
     font-size: 2em;
 }
 
+.block{
+    display: block;
+}
+
+.flex{
+    display: flex;
+}
+
+.none{
+    display: none;
+}
+
+
+
 /* Header */
 
 header{
@@ -138,6 +152,14 @@ div.headerBox .upNav{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.iconCloseHide{
+    display: none;
+}
+
+.iconClose{
+    display: block;
 }
 
 nav.supNav{
@@ -180,14 +202,24 @@ nav.mainNav ul li.active a{
 
 nav.mainNav ul li ul.subMenu{
     background-color: #F5FBFF;
-    transition: all .5s;
+    
 }
 
 .subMenu{
     display: none;
+    transition: all .5s ease;
 }
 
 .subMenuView{
+    display: block;
+    transition: all .2s ease;
+}
+
+.submenuDownHide{
+    display: none;
+}
+
+.submenuDown{
     display: block;
 }
 
@@ -467,6 +499,9 @@ figure.productosImage{
     align-content: center;
     margin: 0;
 }
+
+
+
 
 
 
