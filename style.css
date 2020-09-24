@@ -500,7 +500,41 @@ figure.productosImage{
     margin: 0;
 }
 
+.productoDestacado{
+    border: 1px solid #C4D9F2;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 2em
+}
 
+.productoDestacado figure{
+    margin: 0;
+    background-color: #ffffff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+    overflow: hidden;
+    width: 100%;
+}
+
+.productoDestacado figure img{
+    display: block;
+    width: 100%;
+    height: 22em;
+    object-fit: cover;
+}
+
+.destacadoInfo{
+    padding: 1.5em
+}
+
+.destacadoInfo h4{
+    margin-bottom: 1em;
+    font-size: 1.7em;
+}
+
+.destacadoInfo button{
+    margin: auto;
+    margin-top: 2em
+}
 
 
 
@@ -731,6 +765,42 @@ figure.productosImage{
     .productosList li{
         width: 24%;
     }
+    
+    .productoDestacado{
+        display: flex;
+    }
+    
+    .productoDestacado figure{
+        clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+        order: 1;
+        height: 286px;
+    }
+    
+    .productoDestacado figure img{
+        width: 90%;
+        height: 16em;
+        object-fit: cover;
+        float: right;
+    }
+    
+    .productoDestacado figure{
+        width: 60%;
+    }
+    
+    .productoDestacado .destacadoInfo{
+        width: 40%;
+    }
+    
+    .destacadoInfo{
+        padding: 1.5em;
+        display: flex;    
+        flex-direction: column;
+        justify-content: space-between;    
+    }
+    
+    .destacadoInfo button{
+        margin: 0 auto;
+    }
 }
 
 @media(min-width: 62em){
@@ -753,6 +823,14 @@ figure.productosImage{
     div.industriasInfo h4{
         max-width: 8em;
         margin: auto;
+    }
+    
+    .productoDestacado figure{
+        width: 55%;
+    }
+    
+    .productoDestacado .destacadoInfo{
+        width: 45%;
     }
 }
 
