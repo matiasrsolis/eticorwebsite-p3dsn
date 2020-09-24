@@ -773,7 +773,7 @@ figure.productosImage{
     .productoDestacado figure{
         clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
         order: 1;
-        height: 286px;
+        min-height: 286px;
     }
     
     .productoDestacado figure img{
@@ -792,14 +792,20 @@ figure.productosImage{
     }
     
     .destacadoInfo{
-        padding: 1.5em;
+        padding: 2em;
         display: flex;    
         flex-direction: column;
         justify-content: space-between;    
+        text-align: start
+    }
+    
+    .destacadoInfo h4{
+        font-size: 2.7em;
+        margin-bottom: 0em;
     }
     
     .destacadoInfo button{
-        margin: 0 auto;
+        margin: 0;
     }
 }
 
