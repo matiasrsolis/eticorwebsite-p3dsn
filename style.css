@@ -501,10 +501,19 @@ figure.productosImage{
 }
 
 .productoDestacado{
+    margin-top: 2em;
+}
+
+.productoDestacado a:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.productoDestacado a{
+    display: block;
     border: 1px solid #C4D9F2;
     border-radius: 3px;
     width: 100%;
-    margin-top: 2em
+    padding: 0
 }
 
 .productoDestacado figure{
@@ -523,7 +532,7 @@ figure.productosImage{
 }
 
 .destacadoInfo{
-    padding: 1.5em
+    padding: 1em
 }
 
 .destacadoInfo h4{
@@ -766,7 +775,9 @@ figure.productosImage{
         width: 24%;
     }
     
-    .productoDestacado{
+    
+    /* -Home Productos destacados- */
+    .productoDestacado a{
         display: flex;
     }
     
