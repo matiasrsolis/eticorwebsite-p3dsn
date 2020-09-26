@@ -118,6 +118,10 @@ i.fas.fa-caret-right {
     display: none;
 }
 
+nav.migaPan{
+    width: 100%;
+}
+
 nav.migaPan ul{
     display: flex;
     font-size: .875em;
@@ -596,6 +600,11 @@ figure.productosImage{
 
 
 /* -Novedades- */
+
+
+
+
+
 .contentCard{
     padding: .4em;
 }
@@ -740,10 +749,12 @@ figure.productosImage{
     height: 100%;
     width: 100%;
     background-color: transparent;
+    transition: all .2s ease;
 }
 
 .checkbox:hover input ~ .check {
-    border: 2px solid #2489C5;
+    border: 1px solid #2489C5;
+    transition: all .2s ease;
 }
 
 .checkbox input:checked ~ .check {
@@ -754,7 +765,17 @@ figure.productosImage{
 
 
 
+.selectArchivo ul li a{
+    font-size: .875em;
+    color: #7A7A7A;
+    display: block;
+    text-align: left;
+    padding: .1em
+}
 
+.selectArchivo ul li a:hover{
+    font-weight: 600;
+}
 
 /*----Mediaquery----*/
 
@@ -768,7 +789,7 @@ figure.productosImage{
     
 }
 
-@media(min-width:48em){
+@media(min-width:65em){
     
     .topMargin{
         margin-top: 136.5px;
@@ -960,6 +981,7 @@ figure.productosImage{
         width: 100%;
         margin: auto;
         padding: 2em 0;
+        
     }
     
     /* -Home Industrias- */
@@ -1055,13 +1077,32 @@ figure.productosImage{
     .destacadoInfo button{
         margin: 0;
     }
+    
+    
+    
+    
+    /* -Novedades- */
+    .novBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    .novBox div.contentNews{
+        width: 77%
+    }
+    
+    .novBox aside{
+        width: 21%;
+        order: 1
+    }
+
+    
 }
 
-@media(min-width: 62em){
+@media(min-width: 71em){
     
-    .topMargin{
-        margin-top: 185.5px;
-    }
+    
     
     /* -Home Industrias- */
     
@@ -1094,6 +1135,11 @@ figure.productosImage{
 }
 
 @media(min-width: 100em){
+    
+    .topMargin{
+        margin-top: 185.5px;
+    }
+    
     div.headerBox{
         padding: 0;
         padding-top: 3em;
