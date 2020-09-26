@@ -144,7 +144,7 @@ nav.migaPan ul span{
 header{
     width: 100%;
     z-index: 100;
-    /*position: fixed;*/
+    position: fixed;
     top: 0;
 }
 
@@ -572,7 +572,8 @@ figure.productosImage{
 .headPage{
     background-image: url(img/novedades/portada-novedades.jpg);
     background-size: cover;
-    background-position: center
+    background-position: center;
+    margin-bottom: 1em;
 }
 
 .headPage .filterPage{
@@ -584,6 +585,10 @@ figure.productosImage{
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.topMargin{
+    margin-top: 81.5px;
 }
 
 
@@ -613,7 +618,11 @@ figure.productosImage{
 }
 
 .cardNews h3{
-    font-size: 1em;
+    font-size: .875em;
+    border-bottom: solid 1px #5591cd;
+    margin-bottom: 1.2em;
+    display: inline-block;
+    padding: .2em 0
 }
 
 .cardNews p{
@@ -624,6 +633,126 @@ figure.productosImage{
     border: none;
     background-color: transparent;
 }
+
+
+
+
+
+.filtroBusqueda{
+    
+}
+
+.filtroBusqueda .tituloFiltro{
+    font-size: 1em;
+    text-align: start
+}
+
+.selectPublicacion,
+.selectCategoria,
+.selectIndustria{
+    margin-bottom: 2em
+}
+
+.formBlue{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.formBlue label{
+    width: 100%
+}
+
+.formBlue input{
+    width: calc(100% - 44px);
+    height: 44px;
+    border: solid 1px #C4D9F2;
+    padding: .5em;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.formBlue select{
+    width:100%;
+    height: 44px;
+    border: solid 1px #C4D9F2;
+    padding: .5em;
+    border-radius: 3px;
+}
+
+.formBlue input::placeholder,
+.formBlue select{
+    color: #5591CD;
+    font-size: 1em;
+}
+
+.formBlue button{
+    height: 44px;
+    width: 44px;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.filtroBusqueda .selectIndustria{
+    
+}
+
+.checkbox {
+    display: flex;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: start;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+.selectIndustria label{
+    background-color: #E1F0FC;
+    color: #5591CD;
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    margin-bottom: .5em;
+    border-radius: 3px;
+}
+
+.selectIndustria label img{
+    height: 30px;
+    margin-right: .5em
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.checkbox:hover input ~ .check {
+    border: 2px solid #2489C5;
+}
+
+.checkbox input:checked ~ .check {
+    background-color: rgba(0,0,150,.1);
+    border:none;
+}
+
+
+
 
 
 
@@ -640,6 +769,10 @@ figure.productosImage{
 }
 
 @media(min-width:48em){
+    
+    .topMargin{
+        margin-top: 136.5px;
+    }
     
     img#logoHeader{
         max-height: 3em;
@@ -925,6 +1058,11 @@ figure.productosImage{
 }
 
 @media(min-width: 62em){
+    
+    .topMargin{
+        margin-top: 185.5px;
+    }
+    
     /* -Home Industrias- */
     
     ul.industriasList{
