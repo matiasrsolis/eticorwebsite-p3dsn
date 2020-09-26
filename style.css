@@ -570,8 +570,9 @@ figure.productosImage{
 
 
 .headPage{
-    background-image: url(img/novedades/national-cancer-institute-2fyeLhUeYpg-unsplash.jpg);
+    background-image: url(img/novedades/portada-novedades.jpg);
     background-size: cover;
+    background-position: center
 }
 
 .headPage .filterPage{
@@ -742,7 +743,7 @@ figure.productosImage{
     }
     
     nav.mainNav ul li a {
-        padding: 1.3em 0em;
+        padding: 1em 0em;
         margin-right: 2em;
         border-bottom: 4px solid #FFFF;
         transition: all .2s ease;
@@ -825,7 +826,7 @@ figure.productosImage{
     .footerBox{
         width: 100%;
         margin: auto;
-        padding: 5em 0;
+        padding: 3em 0;
     }
     
     /* -Home Industrias- */
