@@ -604,7 +604,6 @@ figure.productosImage{
 
 
 
-
 .contentCard{
     padding: .4em;
 }
@@ -618,12 +617,22 @@ figure.productosImage{
     font-weight: 500;
 }
 
+.card{
+    
+    justify-content: flex-end;
+}
+
 .cardNews{
     text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
 }
 
 .cardNews h2{
-    font-size: 1.2em
+    font-size: 1.2em;
+    line-height: 1.4em;
 }
 
 .cardNews h3{
@@ -641,10 +650,22 @@ figure.productosImage{
 .cardNews button{
     border: none;
     background-color: transparent;
+    font-size: .875em;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cardNews button i.fas.fa-caret-right{
+    margin-bottom: .25em;
 }
 
 
-
+.novBox .contentNews img.card-img-top {
+    /* height: 32%; */
+    object-fit: cover;
+    height: 155px;
+}
 
 
 .filtroBusqueda{
@@ -1096,12 +1117,21 @@ figure.productosImage{
         width: 21%;
         order: 1
     }
+    
+    .filtroBusqueda{
+        position: sticky;
+        top: 10em;
+    }
 
     
 }
 
 @media(min-width: 71em){
     
+    
+    .card{
+        min-height: 100%;
+    }
     
     
     /* -Home Industrias- */
