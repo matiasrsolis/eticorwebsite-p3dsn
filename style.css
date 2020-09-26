@@ -118,6 +118,25 @@ i.fas.fa-caret-right {
     display: none;
 }
 
+nav.migaPan ul{
+    display: flex;
+    font-size: .875em;
+    
+}
+
+nav.migaPan ul li a{
+    color: #3E4040;
+}
+
+nav.migaPan ul li:last-child a{
+    color: #5591CD;
+}
+
+nav.migaPan ul span{
+    padding: 0 .5em
+}
+
+
 
 
 /* Header */
@@ -178,6 +197,7 @@ img#logoHeader{
     left: -100%;
     top: 4.5em;
     transition: all ease .4s;
+    z-index: 9000;
 }
 
 .hideMenu{
@@ -426,6 +446,7 @@ div.industriasIcon img{
 
 
 
+
 /* -Home Productos- */
 .productosItem{
     border: 1px solid #C4D9F2;
@@ -548,6 +569,43 @@ figure.productosImage{
 
 
 
+
+/* -Novedades- */
+.contentCard{
+    padding: .4em;
+}
+
+.contentCard:hover.contentCard .card{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+}
+
+.contentCard:hover button{
+    color: #007e52;
+}
+
+.cardNews{
+    text-align: start;
+}
+
+.cardNews h2{
+    font-size: 1.2em
+}
+
+.cardNews h3{
+    font-size: 1em;
+}
+
+.cardNews p{
+    font-size: .875em
+}
+
+.cardNews button{
+    border: none;
+    background-color: transparent;
+}
+
+
+
 /*----Mediaquery----*/
 
 @media(min-width:25em){
@@ -639,6 +697,27 @@ figure.productosImage{
     
     .searchTop{
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .inputSearch input{
+        border: none;
+        border-bottom: solid 1px #5591CD;
+        color: #5591CD;
+    }
+    
+    .inputSearch input::placeholder{
+        color: #5591CD;
+        font-size: 1em;
+    }
+    
+    .searchTop button{
+        border: none;
+        background: transparent;
+        color: #5591CD;
+        margin-left: 1em;
+        font-size: 1.1em;
     }
     
     nav.mainNav ul li a {
