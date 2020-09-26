@@ -569,6 +569,25 @@ figure.productosImage{
 
 
 
+.headPage{
+    background-image: url(img/novedades/national-cancer-institute-2fyeLhUeYpg-unsplash.jpg);
+    background-size: cover;
+}
+
+.headPage .filterPage{
+    background-color: rgba(85,145,205,.5);
+    padding: 2.5em;
+}
+
+.headPage h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+
 
 /* -Novedades- */
 .contentCard{
@@ -580,7 +599,8 @@ figure.productosImage{
 }
 
 .contentCard:hover button{
-    color: #007e52;
+/*    color: #007e52;*/
+    font-weight: 500;
 }
 
 .cardNews{
@@ -689,6 +709,7 @@ figure.productosImage{
     
     .btnSection:hover ul.subMenu{
         display: block;
+        z-index: 9000;
     }
     
     .languages{
@@ -741,6 +762,9 @@ figure.productosImage{
     nav.mainNav ul li ul.subMenu li a:hover{
         border-bottom: solid 1px #5591CD;
     }
+    
+    
+    
     
     /* -slider- */
     .sliderIndex ul {
