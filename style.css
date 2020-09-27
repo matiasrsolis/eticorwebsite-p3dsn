@@ -120,12 +120,13 @@ i.fas.fa-caret-right {
 
 nav.migaPan{
     width: 100%;
+    margin-bottom: 2em;
 }
 
 nav.migaPan ul{
     display: flex;
     font-size: .875em;
-    
+    margin: 0;
 }
 
 nav.migaPan ul li a{
@@ -367,7 +368,7 @@ nav.mainNav ul li ul.subMenu{
 
 /* -Main- */
 .mainBox{
-    padding: 2em 0 6em 0;
+    padding: 1em 0 6em 0;
 }
 
 .contentMain{
@@ -587,7 +588,11 @@ figure.productosImage{
 
 .filterPage{
     background-color: rgba(85,145,205,.5);
-    padding: 2.5em;
+    min-height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .filterSection{
@@ -607,7 +612,7 @@ figure.productosImage{
 
 
 
-/* -Header Novedades*/
+/* -Home Novedades- */
 section.novedades{
     background-image: url(img/bg-novedades.jpg);
     background-position: center;
@@ -697,7 +702,7 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
 
 .contentCard{
-    padding: .4em;
+    padding-right: 0;
 }
 
 .contentCard:hover.contentCard .card{
@@ -895,6 +900,41 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
 
 
+/* -Industria- */
+.industriaPage .headPage nav ul{
+    margin: 0;
+}
+
+.industriaPage .headPage nav ul li a{
+    color: #ffffff;
+    padding: 0 .7em 
+}
+
+.industriaPage .headPage nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.headIndustria{
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+.headIndustria h2,
+.headIndustria p{
+    max-width: 43em;
+    margin: auto;
+}
+
+.headIndustria p{
+    font-size: 1em;
+}
+
+
+
+
+
+
+
 /*----Mediaquery----*/
 
 @media(min-width:25em){
@@ -908,6 +948,10 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 }
 
 @media(min-width:65em){
+    
+    .filterPage{
+        min-height: 9em;
+    }
     
     .topMargin{
         margin-top: 136.5px;
@@ -1112,7 +1156,7 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     .footerBox{
         width: 100%;
         margin: auto;
-        padding: 2em 0 8em 0;
+        padding: 1em 0 8em 0;
         
     }
     
