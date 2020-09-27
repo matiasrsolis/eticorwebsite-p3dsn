@@ -151,7 +151,8 @@ header{
     z-index: 100;
     position: fixed;
     top: 0;
-    border-bottom: solid 2px #5591CD;
+/*    border-bottom: solid 2px #5591CD;*/
+    border-bottom: solid 1px #5591CD;
 }
 
 div.headerBox{
@@ -929,10 +930,37 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     font-size: 1em;
 }
 
+.contentIndustria .contentCard{
+    margin-bottom: 4em!important
+}
 
+.contentIndustria .card{
+    border: none;
+    padding: 0 1em;
+}
 
+.contentIndustria .card .cardNews{
+    padding: 0;
+    align-items: center;
+    text-align: center;
+}
 
+.contentIndustria .card img.card-img-top{
+    height: 18.25em;
+    object-fit: contain;
+}
 
+.contentIndustria .card h2.card-title{
+    font-size: 1.5em;
+}
+
+.contentIndustria .card p{
+    font-size: .875em
+}
+
+.contentIndustria .card button{
+    font-size: 1em
+}
 
 
 /*----Mediaquery----*/
@@ -1299,6 +1327,10 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     }
 
     
+    
+    
+    
+    
 }
 
 @media(min-width: 71em){
@@ -1336,6 +1368,20 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     
     .productoDestacado .destacadoInfo{
         width: 45%;
+    }
+    
+    
+    
+    
+    
+    /* -Industria- */
+    .contentIndustria .card img.card-img-top{
+        height: 13.25em;
+        object-fit: cover;
+    } 
+               
+    .contentIndustria .contentCard{
+        margin-bottom: 6em!important
     }
 }
 
