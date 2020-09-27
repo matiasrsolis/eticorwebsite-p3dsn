@@ -582,7 +582,7 @@ figure.productosImage{
     margin-bottom: 1em;
 }
 
-.headPage .filterPage{
+.filterPage{
     background-color: rgba(85,145,205,.5);
     padding: 2.5em;
 }
@@ -596,6 +596,27 @@ figure.productosImage{
 .topMargin{
     margin-top: 81.5px;
 }
+
+
+
+/* -Header Novedades*/
+section.novedades{
+    background-image: url(img/bg-novedades.jpg);
+}
+
+section.novedades ul.cardsNovedades li{
+    padding: 1.2em 1em;
+    
+}
+
+section.novedades ul.cardsNovedades li h5{
+    font-size: .875em;
+    border-bottom: solid 1px #5591cd;
+    margin-bottom: 1.2em;
+    display: inline-block;
+    padding: .2em 0;
+}
+
 
 
 
