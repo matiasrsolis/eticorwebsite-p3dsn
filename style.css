@@ -215,6 +215,20 @@ nav.hiddenSupNav{
     display: none
 }
 
+nav.supNav li{
+    display: flex;
+    align-items: center;
+    padding: .5em
+}
+
+nav.supNav li p{
+    margin-bottom: 0;
+}
+
+nav.supNav i.circulo{
+    font-size: .5em;
+}
+
 img#logoHeader{
     display: block;
     width: auto;
@@ -1138,6 +1152,8 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     
     nav.supNav ul{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     
     nav.mainNav ul li.active a{
