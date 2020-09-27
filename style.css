@@ -412,12 +412,16 @@ nav.mainNav ul li ul.subMenu{
 
 .slogan{
     padding: 2em 0;
+    max-width: 900px;
+    margin: auto;
 }
 
 
-
-
 /* -Home Industrias- */
+ul.industriasList{
+    margin-bottom: 9em;
+}
+
 li.industriasItem{
     border: solid 1px #C4D9F2;
     border-radius: 3px;
@@ -656,7 +660,7 @@ section.novedades{
 
 ul.cardsNovedades {
     display: block;
-    margin-top: 2.5em
+    margin-top: 3.5em
 }
 
 section.novedades ul.cardsNovedades li{
@@ -1316,9 +1320,15 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     .footerBox{
         width: 100%;
         margin: auto;
-        padding: 1em 0 8em 0;
+        padding: 1em 0 11em 0;
         
     }
+    
+    .filterSection .mainBox{
+        padding-bottom: 1em;
+    }
+    
+    
     
     /* -Home Industrias- */
     
@@ -1431,7 +1441,7 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     }
     
     .filterSection{
-        padding: 6em 0;
+        padding: 8em 0 11em 0;
     }
     
     
@@ -1493,6 +1503,7 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     ul.industriasList{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 5em;
     }
 
     li.industriasItem{
