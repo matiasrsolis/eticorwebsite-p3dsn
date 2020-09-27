@@ -1037,6 +1037,45 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     margin-bottom: 1em;
 }
 
+.contentEmpresa hr{
+    width: 7em;
+    margin: auto;
+    border: 1px solid #5591CD;
+    margin-top: 0;
+    margin-bottom: 3.5em;
+}
+
+
+.representaciones{
+    margin-top: 6em;
+}
+
+.representaciones h3{
+    font-size: 2.25em;
+    margin-bottom: 1em;
+}
+
+.logosRepresentaciones ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logosRepresentaciones ul li{
+    padding: .2em;
+    margin: 1em auto;
+}
+
+.logosRepresentaciones ul li img{
+    display: block;
+    max-height: 3em;
+    margin: auto;
+}
+
+
+
+
+
+
 
 
 
@@ -1405,6 +1444,21 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
     
     
+    
+    /* -Empresa- */
+    
+    .logosRepresentaciones ul li{
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .logosRepresentaciones ul li img {
+        display: block;
+        max-height: 6em;
+        margin: auto;
+    }
+
     
     
     
