@@ -15,5 +15,18 @@ $(document).ready(function() {
     $('.carousel').carousel({
       interval: 4000
     })
+    
+    $(window).on('scroll', function(){
+        console.log('funciona');
+        if($(window).scrollTop()){
+            $(".supNav").css({"display":"none"});
+            $('#logoHeader').css({"height":"2em"});
+            
+        } else {
+            
+            $(".supNav").css({"display":"block"});
+            $('#logoHeader').css({"height":"3em"});
+        }
+    })
 });
 
