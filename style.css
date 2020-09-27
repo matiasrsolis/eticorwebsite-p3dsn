@@ -620,7 +620,8 @@ figure.productosImage{
     padding: 4em 0;
 }
 
-.headPage h1{
+.headPage h1,
+.headPageIndustrias h1{
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
@@ -921,16 +922,16 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
 
 /* -Industria- */
-.industriaPage .headPage nav ul{
+.industriaPage .headPageIndustrias nav ul{
     margin: 0;
 }
 
-.industriaPage .headPage nav ul li a{
+.industriaPage .headPageIndustrias nav ul li a{
     color: #ffffff;
     padding: 0 .7em 
 }
 
-.industriaPage .headPage nav ul li a:hover{
+.industriaPage .headPageIndustrias nav ul li a:hover{
     text-decoration: underline;
 }
 
@@ -955,6 +956,7 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 .headIndustria p{
     font-size: 1em;
     margin-top: 1.5em;
+    margin-bottom: 1em;
 }
 
 .contentIndustria .contentCard{
@@ -1000,7 +1002,12 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     margin-right: 1em
 }
 
-
+.headPageIndustrias{
+    background-image: url(img/industrias/portada-industrias.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
 
 
 /*----Mediaquery----*/
