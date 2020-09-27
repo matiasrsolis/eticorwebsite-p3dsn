@@ -79,6 +79,24 @@ body{
     align-items: center;
 }
 
+.linealBlueButton{
+    border: solid 2px #5591CD;
+    color: #5591CD;
+    padding: 0;
+    font-size: 1.1em;
+    height: 2.7em;
+    padding: 0 1.3em;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linealBlueButton:hover{
+    background-color: #E1F0FC;
+    color: #5591CD;
+}
+
 .coverGreenButton{
     color: #FFFFFF;
     background-color: #00A169;
@@ -97,6 +115,7 @@ body{
     background-color: #018658;
     color: #FFFFFF;
 }
+
 
 i.fas.fa-caret-right {
     margin-left: 1em;
@@ -926,8 +945,16 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     margin: auto;
 }
 
+.headIndustria h2{
+    font-size: 2.25em;
+    border-bottom: solid 1px #5591CD;
+    display: inline-block;
+    padding-bottom: .4em;
+}
+
 .headIndustria p{
     font-size: 1em;
+    margin-top: 1.5em;
 }
 
 .contentIndustria .contentCard{
@@ -961,6 +988,19 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 .contentIndustria .card button{
     font-size: 1em
 }
+
+.backPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh
+}
+
+.backPage i{
+    margin-right: 1em
+}
+
+
 
 
 /*----Mediaquery----*/
