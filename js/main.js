@@ -19,7 +19,7 @@ $(document).ready(function() {
     $(window).on('scroll', function(){
         console.log('funciona');
         if($(window).scrollTop()){
-            $(".supNav").css({"display":"none"});
+            $(".supNav").addClass("hiddenSupNav");
             $('#logoHeader').css({"height":"2.3em"});
             $('.mainNav ul li a').addClass("itemNav");
             //$('.mainNav ul li a').css({"padding":".5em 0 1em 0"});
@@ -28,7 +28,7 @@ $(document).ready(function() {
             
         } else {
             
-            $(".supNav").css({"display":"block"});
+            $(".supNav").removeClass("hiddenSupNav");
             $('#logoHeader').css({"height":"3em"});
             $('.mainNav ul li a').removeClass("itemNav");
             //$('.mainNav ul li a').css({"padding":"1em 0"});
