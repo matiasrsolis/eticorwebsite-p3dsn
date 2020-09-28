@@ -604,6 +604,25 @@ div.industriasIcon img{
     margin-top: 2.5em;
 }
 
+.productosItem{
+    position: relative;
+}
+
+.productosItem .logoProducto{
+    width: 100%;
+    position: absolute;
+    top: -1em;
+}
+
+.productosItem .logoProducto img{
+    background-color: #ffffff;
+    max-width: 60%;
+    max-height: 2em;
+    display: block;
+    margin: auto;
+    padding: 0 .8em;
+}
+
 figure.productosImage{
     margin: 0
 }
@@ -611,7 +630,7 @@ figure.productosImage{
 .productosImage img{
     width: 100%;
     height: 230px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .productosInfo{
@@ -625,7 +644,6 @@ figure.productosImage{
 
 .productosIcon img{
     max-height: 2.2em;
-    border-right: 1px #5591CD solid;
     padding: 0 .8em;
     
 }
@@ -638,6 +656,7 @@ figure.productosImage{
     display: flex;
     align-content: center;
     margin: 0;
+    border-left: 1px #5591CD solid;
 }
 
 .productoDestacado{
@@ -1187,6 +1206,42 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 .setPaddingBottom{
     padding-bottom: 0!important;
 }
+
+.row.row-cols-1.row-cols-md-2.row-cols-xl-4.contentNews{
+    margin: 0;
+    max-width: 100%;
+}
+
+.pageProductos .contentCard{
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 3em!important
+}
+
+.pageProductos .productosInfo{
+    min-height: 5.18em;
+}
+
+.pageProductos .productosImage .productosIcon img{
+    height: 250px;
+    border-right: 0em!important
+}
+
+.pageProductos .productosInfo h4{
+    font-size: 1em;
+    border-left: 1px #5591CD solid;
+    min-height: 3.5em;
+    display: flex;
+    align-items: center;
+}
+
+.pageProductos .backPage i{
+    margin-left: 1em;
+    margin-right: 0;
+}
+
+
+
 
 
 
