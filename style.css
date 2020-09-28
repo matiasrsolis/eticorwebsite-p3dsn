@@ -604,6 +604,20 @@ div.industriasIcon img{
     margin-top: 2.5em;
 }
 
+.cabecera .contentNews .col.mb-4.contentCard{
+    padding: 0;
+    margin-top: 3em
+}
+
+.cabecera .contentNews .col.mb-4.contentCard .card {
+    min-height: 100%;
+    width: 96%;
+}
+
+a.productosCard {
+    margin: 0;
+}
+
 .productosItem{
     position: relative;
 }
@@ -749,8 +763,13 @@ section.novedades{
 }
 
 ul.cardsNovedades {
-    display: block;
-    margin-top: 3.5em
+    display: flex;
+    margin-top: 3.5em;
+    flex-direction: column;
+    width: 100%;
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
 }
 
 section.novedades ul.cardsNovedades li{
@@ -763,7 +782,7 @@ section.novedades ul.cardsNovedades li{
     border-radius: 3px;
     transition: all .3s ease;
     width: 100%;
-/*    max-width: 22em;*/
+    max-width: 25em;
     margin: auto;
     margin-bottom: 1em
 }
@@ -1278,15 +1297,41 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
 @media(min-width:25em){
     
-    
-    
     .sliderInfo{
         height: 100%;
     }
     
 }
 
+
+@media(min-width:40em){
+    
+    ul.industriasList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+    
+    ul.industriasList li{
+        width: 49%;
+    }
+    
+    ul.industriasList li img{
+        height: 250px
+    }
+    
+}
+
+
 @media(min-width:65em){
+    
+    ul.industriasList li {
+        width: 24%;
+    }
+    
+    ul.cardsNovedades{
+        flex-direction: row;
+    }
     
     .filterPage{
         min-height: 9em;
