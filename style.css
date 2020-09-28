@@ -1164,6 +1164,33 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
 
 
+/* -Productos- */
+.headPageProductos .filterPage{
+    background-color: #ffffff;
+}
+
+.pageProductos .filtroBusqueda{
+    display: block;
+}
+
+.filtroBusqueda form.busquedaProducto{
+    display: block; 
+}
+
+.filtroBusqueda form.busquedaProducto label{
+    display: block;
+    min-width: 100%;
+    font-size: 18px;
+    padding: .4em 1.2em;
+}
+
+.setPaddingBottom{
+    padding-bottom: 0!important;
+}
+
+
+
+
 
 
 
@@ -1601,6 +1628,45 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
     
     
+    
+    /* -Productos- */
+    .pageProductos .migaPan{
+        padding-top: 1.5em;
+    }
+    
+    .pageProductos .filtroBusqueda{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .filtroBusqueda form.busquedaProducto{
+        display: flex; 
+    }
+    
+    .filtroBusqueda form.busquedaProducto label{
+        display: flex;
+        min-width: 23%;
+        min-height: 68.38px;
+        margin-right: 1em;
+        font-size: 18px;
+        padding: .4em 1em;
+        margin-bottom: 0;
+    }
+    
+    .filtroBusqueda form.busquedaProducto label img{
+        margin-right: .8em;
+    }
+    
+    .pageProductos .filtroBusqueda .selectPublicacion input#buscarNota,
+    .pageProductos .filtroBusqueda .formBlue button{
+        height: 68.38px;
+        margin-top: 0;
+    }
+    
+    .pageProductos .filtroBusqueda .selectPublicacion .formBlue{
+        width: 100%
+    }
     
 }
 
