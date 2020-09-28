@@ -103,7 +103,7 @@ body{
     padding: 0;
     font-size: 1.1em;
     height: 2.5em;
-    width: 7.2em;
+    padding: 0 1.3em;
     border-radius: 3px;
     display: flex;
     justify-content: center;
@@ -1240,9 +1240,33 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     margin-right: 0;
 }
 
+.pageProductos .productoDestacado{
+    margin-bottom: 4em
+}
 
+.pageProductos .prodDestacado img.imgEmpresaDestacado{
+   display: block;
+    margin: auto;
+}
 
+.pageProductos .prodDestacado .infoProdDestacado{
+    text-align: center;
+}
 
+.pageProductos .prodDestacado .infoProdDestacado .imgEmpresaDestacado{
+    max-width: 10em;
+    max-height: 6em;
+}
+
+.pageProductos .prodDestacado button.coverGreenButton{
+    margin: auto;
+}
+
+.hiddenDest{
+    display: none
+}
+
+/*1739*/
 
 
 
@@ -1618,6 +1642,7 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     
     .destacadoInfo button{
         margin: 0;
+        width: 10em;
     }
     
     
@@ -1721,6 +1746,34 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     
     .pageProductos .filtroBusqueda .selectPublicacion .formBlue{
         width: 100%
+    }
+    
+    
+    .pageProductos .prodDestacado{
+        display: flex
+    }
+    
+    .pageProductos .productoDestacado{
+         
+    }
+    
+    .pageProductos .productoDestacado figure.destLeft{
+        order: 0;
+        clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    }
+    
+    .hiddenDest{
+        display: block;
+    }
+    
+    .pageProductos .productoDestacado .destacadoInfo{
+        text-align: center;
+        width: 60%;
+        display: flex
+    }
+    
+    .pageProductos .productoDestacado .destacadoInfo button{
+        margin: 0 auto
     }
     
 }
