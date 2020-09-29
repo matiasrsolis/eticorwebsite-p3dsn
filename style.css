@@ -604,15 +604,15 @@ div.industriasIcon img{
     margin-top: 2.5em;
 }
 
-.cabecera .contentNews .col.mb-4.contentCard{
-    padding: 0;
-    margin-top: 3em
+.cabecera .contentNews .col.mb-4.contentCard {
+    margin-top: 3em;
+    max-width: 100%;
 }
 
-.cabecera .contentNews .col.mb-4.contentCard .card {
+/*.cabecera .contentNews .col.mb-4.contentCard .card {
     min-height: 100%;
     width: 96%;
-}
+}*/
 
 a.productosCard {
     margin: 0;
@@ -665,7 +665,7 @@ figure.productosImage{
 .productosInfo h4{
     flex: 1;
     text-align: start;
-    padding: 0 .8em;
+    padding-left: .8em;
     font-size: 1em;
     display: flex;
     align-content: center;
@@ -851,6 +851,8 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
 .contentCard{
     padding-right: 0;
+    padding-left: 0;
+    display: flex;
 }
 
 .contentCard:hover.contentCard .card{
@@ -863,7 +865,7 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 }
 
 .card{
-    
+    height: 100%;
     justify-content: flex-end;
 }
 
@@ -1288,9 +1290,21 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 /*1739*/
 
 
+.novedadesPage .row.row-cols-1.row-cols-md-2.row-cols-xl-3.contentNews {
+    width: 100%;
+    margin: auto;
+}
 
+.col.mb-4.contentCard a {
+    display: block;
+    width: 100%;
+}
 
-
+.pageProductos .card
+li.productosItem.card,
+{
+    width: 100%;
+}
 
 
 /*----Mediaquery----*/
@@ -1320,10 +1334,47 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
         height: 250px
     }
     
+    .cabecera .contentNews .col.mb-4.contentCard {
+        margin-top: 1em;
+        max-width: 49%;
+    }
+    
+    .row.row-cols-1.row-cols-md-2.row-cols-xl-4.contentNews {
+        margin: 0;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3em;
+    }
+    
 }
 
 
+
+@media(min-width:49em){
+    .col.mb-4.contentCard a {
+        display: block;
+        width: 97%;
+    }     
+    
+    .indexPage .col.mb-4.contentCard a {
+        display: block;
+        width: 100%;
+    } 
+    
+    .pageProductos .col.mb-4.contentCard a {
+        display: block;
+        width: 100%;
+    } 
+}
+
+
+
 @media(min-width:65em){
+    
+    .noveadesPage{
+        
+    }
     
     ul.industriasList li {
         width: 24%;
@@ -1473,11 +1524,30 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     
     
     
+    .cabecera .contentNews{
+        display: flex;
+        justify-content: space-between
+    }
     
+    .cabecera .contentNews .contentCard{
+    }
     
+    .cabecera .contentNews .col.mb-4.contentCard .card {
+        min-height: 100%;
+        
+    }
+    
+    .cabecera .contentNews .col.mb-4.contentCard {
+        max-width: 24%;
+    }
 
 
 
+    .novedadesPage .row.row-cols-1.row-cols-md-2.row-cols-xl-3.contentNews {
+        width: 77%;
+        margin: auto;
+        margin-left: 0;
+    }
 
 
 
