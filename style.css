@@ -140,6 +140,7 @@ i.fas.fa-caret-right {
 nav.migaPan{
     width: 100%;
     margin-bottom: 2em;
+    padding-top: 1em;
 }
 
 nav.migaPan ul{
@@ -867,6 +868,7 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 .card{
     height: 100%;
     justify-content: flex-end;
+    flex: 1;
 }
 
 .cardNews{
@@ -1307,6 +1309,91 @@ li.productosItem.card,
 }
 
 
+
+/* -Detalle Producto- */
+.pageProdDetail article.productDetail{
+    min-height: 75vh;
+    margin-bottom: 8em;
+}
+
+.pageProdDetail article.productDetail img{
+    width: 100%;
+}
+
+.pageProdDetail article.productDetail hr{
+    width: 60px;
+    border-bottom: solid 1.5px #5591CD;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.pageProdDetail article.productDetail p{
+    margin-bottom: 3em;
+}
+
+.pageProdDetail article.productDetail .nav-link{
+    display: block;
+    padding: .7rem .6rem;
+    font-size: .9em;
+    border: 1px solid #E1F0FC;
+    border-radius: 0;
+    color: #5591CD;
+}
+
+.pageProdDetail article.productDetail .active{
+    background-color: #E1F0FC;
+    font-weight: 600;
+    color: #5591CD;
+}
+
+.pageProdDetail article.productDetail .active h4{
+    margin-bottom: .5em;
+}
+
+.pageProdDetail article.productDetail .active p{
+    font-weight: 400;
+    color: #3E4040;
+}
+
+.pageProdDetail article.productDetail div#myTabContent{
+    padding: 1.5em .5em;
+    background-color: #E1F0FC;
+    margin-bottom: 3em;
+}
+
+.pageProdDetail article.productDetail button{
+    background-color: #5591CD;
+    color: #FFFFFF;
+    padding: .7em 1.2em;
+    border: none;
+    border-radius: 3px;
+}
+
+.pageProdDetail section.prodSimilares{
+    margin-bottom: 10em;
+}
+
+.pageProdDetail section.prodSimilares h2{
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----Mediaquery----*/
 
 @media(min-width:25em){
@@ -1357,7 +1444,8 @@ li.productosItem.card,
         width: 97%;
     }     
     
-    .indexPage .col.mb-4.contentCard a {
+    .indexPage .col.mb-4.contentCard a,
+    .pageProdDetail .col.mb-4.contentCard a{
         display: block;
         width: 100%;
     } 
@@ -1371,6 +1459,10 @@ li.productosItem.card,
 
 
 @media(min-width:65em){
+    
+    nav.migaPan{
+        padding-top: 0;
+    }
     
     .noveadesPage{
         
@@ -1889,6 +1981,14 @@ li.productosItem.card,
     
     .pageProductos .productoDestacado .destacadoInfo button{
         margin: 0 auto
+    }
+    
+    
+    
+    
+    /* -Detalle Producto- */
+    .pageProdDetail section.productDetail{
+        
     }
     
 }
