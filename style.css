@@ -1312,7 +1312,6 @@ li.productosItem.card,
 
 /* -Detalle Producto- */
 .pageProdDetail article.productDetail{
-    min-height: 75vh;
     margin-bottom: 8em;
 }
 
@@ -1380,7 +1379,9 @@ li.productosItem.card,
     width: 100%;
 }
 
-
+.pageProdDetail .mainBox {
+    padding-bottom: 0em;
+}
 
 
 
@@ -1454,6 +1455,17 @@ li.productosItem.card,
         display: block;
         width: 100%;
     } 
+    
+    .pageProdDetail article.productDetail img {
+        width: 100%;
+        /* max-height: 10em; */
+        height: 44em;
+        object-fit: contain;
+    }
+    
+    .pageProdDetail article.productDetail .nav-link{
+        font-size: 1em
+    }
 }
 
 
@@ -1917,7 +1929,8 @@ li.productosItem.card,
     
     
     /* -Productos- */
-    .pageProductos .migaPan{
+    .pageProductos .migaPan,
+    .pageProdDetail .migaPan{
         padding-top: 1.5em;
     }
     
@@ -1987,8 +2000,72 @@ li.productosItem.card,
     
     
     /* -Detalle Producto- */
-    .pageProdDetail section.productDetail{
-        
+    .pageProdDetail .productDetail{
+        display: flex;
+    }
+    
+    .pageProdDetail .productDetail figure.productCard{
+        width: 50%;
+    }
+    
+    
+    .pageProdDetail .productDetail div.detailInfo{
+        width: 50%;
+    }
+    
+    .pageProdDetail article.productDetail div#myTabContent{
+        padding: 1.5em 2em;
+        margin-bottom: 4em;
+    }
+    
+    .pageProdDetail article.productDetail p{
+        font-size: 1.125em;
+    }
+    
+    .pageProdDetail article.productDetail hr{
+        margin: 0;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+        border-bottom: solid .15em #5591CD; 
+    }
+    
+     .pageProdDetail article.productDetail div#myTabContent {
+        padding:2em 2.3em; 
+        padding-bottom: 2.5em;
+        margin-bottom: 4em;
+    }
+    
+    
+    .pageProdDetail article.productDetail .tab-pane p {
+        margin: 0;
+        font-size: 1em;
+    }
+    
+    .pageProdDetail article.productDetail .detailInfo{
+        text-align: left;
+    }
+    
+    .pageProdDetail article.productDetail .nav-link{
+        padding: .7rem 1.8em;
+    }
+    
+    .pageProdDetail article.productDetail{
+        margin-bottom: 10em;
+    }
+    
+    .pageProdDetail article.productDetail h1{
+        font-size: 3.4em;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    
+    .pageProdDetail article.productDetail img{
+        max-height: 38em;
+    }
+    
+    .pageProdDetail section.prodSimilares h2{
+        font-size: 2.5em;  
+        text-align: left;
     }
     
 }
@@ -2031,10 +2108,6 @@ li.productosItem.card,
         width: 45%;
     }
     
-    
-    
-    
-    
     /* -Industria- */
     .contentIndustria .card img.card-img-top{
         height: 13.25em;
@@ -2044,6 +2117,20 @@ li.productosItem.card,
     .contentIndustria .contentCard{
         margin-bottom: 6em!important
     }
+    
+    .pageProdDetail article.productDetail img{
+        margin-left: -20%;
+    }
+    
+    .pageProdDetail article.productDetail .nav-tabs{
+/*        margin-top: 1em;*/
+    }
+    
+    .pageProdDetail article.productDetail .nav-tabs a{
+        font-size: 1.15em;   
+        padding: .5em 2em
+    }
+    
 }
 
 @media(min-width: 100em){
