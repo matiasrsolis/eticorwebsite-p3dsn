@@ -1161,19 +1161,21 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 .contentEmpresa{
     max-width: 47em;
     margin: auto;
+    text-align: left;
 }
 
 .contentEmpresa h2{
-    font-size: 2.25em;
-    margin-bottom: 1em;
+    font-size: 1.6em;
+    margin-bottom: 1.6em;
+    max-width: 27.5em;
+    line-height: 1.4em;
 }
 
 .contentEmpresa hr{
     width: 7em;
-    margin: auto;
     border: 1px solid #5591CD;
     margin-top: 0;
-    margin-bottom: 3.5em;
+    margin-bottom: 3em;
 }
 
 
@@ -1466,6 +1468,8 @@ li.productosItem.card,
     .pageProdDetail article.productDetail .nav-link{
         font-size: 1em
     }
+    
+    
 }
 
 
@@ -1924,7 +1928,54 @@ li.productosItem.card,
         max-height: 6em;
         margin: auto;
     }
+    
+    .pageEmpresa .contentMain{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
 
+    .pageEmpresa .contentMain .migaPan{
+        width: 100%
+    }
+    
+    .pageEmpresa .contentMain .contentEmpresa{
+        width: 54%;
+        margin: 0;
+        text-align: left;
+    }
+    
+    .pageEmpresa .contentMain .representaciones{
+        width: 40%;
+        margin: 0;
+    }
+    
+    .pageEmpresa .contentMain .logosRepresentaciones ul li{
+        max-width: 38%;
+    }
+    
+    .pageEmpresa .contentMain .logosRepresentaciones {
+        margin-top: -2em;
+    }
+    
+    .pageEmpresa .contentMain .logosRepresentaciones ul li {
+        padding: 0;
+        margin: .5em auto;
+    }
+    
+    .pageEmpresa .contentMain .logosRepresentaciones ul li img{
+        max-width: 100%;
+    }
+    
+    .contentEmpresa hr{
+        margin: 0;
+        margin-bottom: 3em;
+    }
+    
+    
+    
+    
     
     
     
@@ -2066,6 +2117,10 @@ li.productosItem.card,
     .pageProdDetail section.prodSimilares h2{
         font-size: 2.5em;  
         text-align: left;
+    }
+    
+    .pageEmpresa{
+        padding-bottom: 9em
     }
     
 }
