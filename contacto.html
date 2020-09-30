@@ -82,10 +82,65 @@
         </div>
     </header>
     
-    <main> 
-       <div class="mainBox">
+    <main class="topMargin">
+      
+       <section class="headPageContacto">
+         <div class="filterPage">
+             <h1 class="titles fontWhite mayuscula">Contáctenos</h1>
+         </div>
+       </section>
+        
+       <div class="mainBox pageContacto contentMain">
+           
+             <nav class="migaPan">
+                  <ul>
+                      <li><a href="index.html">Inicio</a></li>
+                      <span>»</span>
+                      <li><a href="contacto.html">Contacto</a></li>
+                  </ul>
+              </nav>
             
-             
+             <article class="formulario">
+                
+                 <h2 class="fontBlue bold">Envíenos su consulta a través del siguiente formulario</h2>
+                 
+                 <p class="fontBlue">Los campos marcados con <span class="requiredIcon">*</span> son de carácter obligatorio</p>
+                 
+                 <hr>
+                 
+                 <form action="">
+                    <div class="inputContacto">
+                        <label for="nombreApellido">Nombre y Apellido<span class="requiredIcon">*</span></label><br>
+                        <input type="text" id="nombreApellido" name="nombreApellido">
+                    </div>
+                    <div class="inputContacto">
+                        <label for="email">E-mail<span class="requiredIcon">*</span></label><br>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="inputContacto">
+                        <label for="email">Empresa / cargo<span class="requiredIcon">*</span></label><br>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="inputContacto">
+                        <label for="telefono">Teléfono comercial<span class="requiredIcon">*</span></label><br>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div id="inputMensaje" class="inputContacto">
+                        <label for="mensaje">Mensaje<span class="requiredIcon">*</span></label><br>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                    </div>
+                    <div id="btnEnviar">
+                        <button type="submit">Enviar</button>
+                    </div>
+                    
+                     
+                 </form>
+                 
+             </article>
+                
+             <aside class="datosContacto">
+                 
+             </aside>
                  
        </div>
     </main>
