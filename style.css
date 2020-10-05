@@ -861,12 +861,7 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
 
 
-
-
 /* -Novedades- */
-
-
-
 
 .contentCard{
     padding-right: 0;
@@ -1050,9 +1045,6 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     border:none;
 }
 
-
-
-
 .selectArchivo ul li a{
     font-size: .875em;
     color: #7A7A7A;
@@ -1067,6 +1059,81 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
 
 
+/* -Nota- */
+
+.pageNota{
+    padding-bottom: 0;
+}
+
+.pageNota nav.migaPan ul li a{
+    display: block;
+    text-align: left;
+}
+
+.pageNota .contentNota h1{
+    
+}
+
+.pageNota .contentMain figure img{
+    height: 18.75em;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.pageNota .textoNota{
+    max-width: 47em;
+    margin: auto;
+}
+
+.pageNota .contentNota h2{
+    font-size: 1em;
+    border-bottom: 1px solid #5591CD;
+    display: inline-block;
+    padding-bottom: .5em;
+}
+
+.pageNota .contentNota>div{
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.pageNota .contentNota .textoNota{
+    text-align: left;
+}
+
+.pageNota .contentNota .textoNota h3{
+    font-size: 1.125em;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.pageNota .contentNota .textoNota figure img{
+    width: 100%;
+}
+
+.pageNota .contentNota .textoNota figure figcaption{
+    font-size: .875em;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.pageNota .backPage{
+    margin-bottom: 3em;
+}
+
+.pageNota .piePagNota{
+    background-color: #E1F0FC;
+    padding: 2em;
+}
+
+.pageNota .piePagNota p{
+    font-size: .875em;
+}
+
+.pageNota .contentMain{
+    flex-direction: column;
+}
 
 
 
