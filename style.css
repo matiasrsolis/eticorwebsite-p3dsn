@@ -116,6 +116,24 @@ body{
     color: #FFFFFF;
 }
 
+.coverBlueButton{
+    color: #FFFFFF;
+    background-color: #5591CD;
+    padding: 0;
+    font-size: 1.1em;
+    height: 2.5em;
+    padding: 0 1.3em;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.coverBlueButton:hover{
+    background-color: #0b6bcb;
+    color: #FFFFFF;
+}
 
 i.fas.fa-caret-right {
     margin-left: 1em;
@@ -1140,6 +1158,36 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     margin-bottom: 1em;
 }
 
+
+/* -Hospitales- */
+.headPageHospital{
+    background-image: url(img/hospital/portada-hospital.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+.hospitalesPage section div.headIndustria h2{
+    border: none;
+}
+
+.hospitalesPage section div.headIndustria hr{
+    border-bottom: 1px solid #5591CD;
+    width: 11em;
+    margin: auto;
+    margin-top: .5em;
+    margin-bottom: .5em
+}
+
+.hospitalesPage section div.headIndustria button{
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.hospitalesPage .contentCard h2{
+    font-size: 1.125em!important;
+}
 
 
 
