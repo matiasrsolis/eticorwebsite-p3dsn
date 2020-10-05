@@ -1389,7 +1389,7 @@ li.productosItem.card,
 
 /* -Contacto- */
 .headPageContacto{
-    background-image:url(img/empresa/portada-empresa.jpg); 
+    background-image:url(img/contacto/portada-contacto.jpg); 
     background-size: cover;
     background-position: center;
     margin-bottom: 1em;
@@ -1486,6 +1486,41 @@ li.productosItem.card,
 div#btnEnviar {
     margin: auto;
 }
+
+.pageContacto aside.datosContacto{
+    margin-top: 5em;
+}
+
+.pageContacto aside.datosContacto h3{
+    font-size: 1.2em;
+}
+
+.pageContacto aside.datosContacto ul{
+    margin-top: 3em;
+}
+
+.pageContacto aside.datosContacto ul li{
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.pageContacto aside.datosContacto ul li div{
+    flex: 1;
+}
+
+.pageContacto aside.datosContacto ul li figure{
+    width: 15%;
+    max-width: 5em;
+}
+
+.pageContacto aside.datosContacto ul li figure img{
+    width: 1.7em;
+}
+
+.pageContacto aside.datosContacto ul li h4{
+    font-size: 1em;
+}
+
 
 
 /*----Mediaquery----*/
@@ -2231,7 +2266,7 @@ div#btnEnviar {
     }
 
     .pageContacto aside.datosContacto{
-        width: 40%;
+        width: 34%;
     }
     
     .pageContacto article.formulario form{
@@ -2252,6 +2287,10 @@ div#btnEnviar {
         background-color: #2b77c3;
     }
 
+    .pageContacto aside.datosContacto{
+        margin-top: 0;
+    }
+    
     
 }
 
