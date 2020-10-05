@@ -194,7 +194,7 @@ header{
 }
 
 div.headerBox{
-    padding: 1.3em;
+    padding: 1.3em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1065,6 +1065,11 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
     padding-bottom: 0;
 }
 
+.pageNota nav.migaPan{
+    margin-bottom: 1.2em;
+    margin-top: 1em;
+}
+
 .pageNota nav.migaPan ul li a{
     display: block;
     text-align: left;
@@ -1072,6 +1077,17 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 
 .pageNota .contentNota h1{
     
+}
+
+aside.piePagNota{
+    background-color: #E1F0FC;
+    padding: 3em 2em;
+}
+
+aside.piePagNota p{
+    max-width: 47em;
+    margin: auto;
+    margin-bottom: 2em;
 }
 
 .pageNota .contentMain figure img{
@@ -1084,6 +1100,15 @@ section.novedades ul.cardsNovedades li span i.fas.fa-caret-right{
 .pageNota .textoNota{
     max-width: 47em;
     margin: auto;
+}
+
+.pageNota .contentNota .encabezadoNota{
+    margin-top: 2em;
+}
+
+.pageNota .contentNota h1{
+    margin-top: .3em;
+    margin-bottom: .5em;
 }
 
 .pageNota .contentNota h2{
@@ -1752,7 +1777,7 @@ div#btnEnviar {
 
     div.headerBox{
         display: block;
-        padding: 1.3em 1.3em 0 1.3em;
+        padding: 1.3em 2em 0 2em;
     }
     
     nav.mainNav{
@@ -2154,6 +2179,10 @@ div#btnEnviar {
     }
 
     
+    .pageNota .contentNota h1{
+        font-size: 3em;
+    }
+    
     
     
     /* -Empresa- */
@@ -2215,7 +2244,9 @@ div#btnEnviar {
     }
     
     
-    
+    .pageNota .contentMain{
+        display: block;
+    }
     
     
     
@@ -2406,6 +2437,13 @@ div#btnEnviar {
         margin-top: 0;
     }
     
+    .pageNota .mainBox{
+        padding-bottom: 0;
+    }
+    
+    .pageNota{
+        padding-bottom: 0;
+    }
     
 }
 
