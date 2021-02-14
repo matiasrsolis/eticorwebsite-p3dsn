@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Eticor S.A. - Representado la excelencia</title>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/861dcd5a75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fontBlack">
+    <header class="bgWhite">
+       <div class="headerBox">
+            <div class="upNav">
+                <a href="index.html">
+                    <img id="logoHeader" src="img/eticor-isologo.png" alt="logo de Eticor">
+                </a>
+                <nav class="supNav">
+                    <ul class="bgWhite fontBlue">
+                        <li>
+                            <p>+54 11 4961-7044</p>
+                        </li>
+                        <li><i class="fas fa-circle fontBlue circulo"></i></li>
+                        <li>
+                            <a class="fontBlue" href="mailto:info@eticor.com.ar">info@eticor.com.ar</a>
+                        </li>
+                        <li><i class="fas fa-circle fontBlue circulo"></i></li>
+                        <li>
+                            <a class="fontBlue" href="#">English</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="btnMenu" class=" fontBlue">
+                <i class="iconMenu fas fa-bars"></i>
+                <i class="iconCloseHide fas fa-times"></i>
+            </button>
+            <nav class="mainNav">
+                <ul class="bgWhite">
+                    <li>
+                        <a href="index.html" class="mayuscula fontBlack">Inicio</a>
+                    </li>
+                    <li class="btnSection">
+                        <a href="#" class="mayuscula fontBlack"><span>Industrias</span><i id="submenuRight" class="fas fa-caret-right fontBlue"></i><i id="submenuDown" class="fas fa-caret-down submenuDownHide"></i></a>
+                        <ul class="subMenu">
+                            <li><a href="industria-farmaceutica.html" class="fontBlack">Industria Farmacéutica</a></li>
+                            <li><a href="industria-alimenticia.html" class="fontBlack">Industria Alimenticia</a></li>
+                            <li><a href="industria-vitivinicola.html" class="fontBlack">Industria Vitivinícola</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="hospitales.html" class="mayuscula fontBlack">Hospitales</a>
+                    </li>
+                    <li>
+                        <a href="productos.html" class="mayuscula fontBlack">Productos</a>
+                    </li>
+                    <li>
+                        <a href="empresa.html" class="mayuscula fontBlack">Empresa</a>
+                    </li>
+                    <li class="active">
+                        <a href="novedades.html" class="mayuscula fontBlack">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="mayuscula fontBlack">Contacto</a>
+                    </li>
+                    <li class="languages">
+                        <a href="contacto.html" class="fontBlue">English</a>
+                    </li>
+                </ul>
+                <div class="searchTop">
+                    <div class="inputSearch">
+                        <input type="search" placeholder="Buscar" class="search" id="search" style="display: inline-block">
+                    </div>
+                    <a href="busqueda.html"><button><i class="fas fa-search"></i></button></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="mainNews topMargin novedadesPage">      
+       <section class="headPage">
+         <div class="filterPage">
+             <h1 class="titles fontWhite">Novedades</h1>
+         </div>
+       </section>
+       <div class="mainBox">            
+            
+            <section class="contentMain novBox">
+               
+                
+                <nav class="migaPan">
+                  <ul>
+                      <li><a href="index.html">Inicio</a></li>
+                      <span>»</span>
+                      <li><a href="novedades.html">Novedades</a></li>
+                  </ul>
+                </nav>
+                
+                <aside>
+                   <div class="filtroBusqueda">
+                        <div class="selectPublicacion">
+                           <form action="" class="flex formBlue">
+                                <label for="buscarNota" class="fontGreen tituloFiltro">Buscar publicaciones</label>
+                                <input id="buscarNota" type="text" placeholder="Buscar"> 
+                                <button class="bgBlue"><i class="fas fa-search fontWhite"></i></button> 
+                           </form>
+                        </div>
+                        
+                        <div class="selectCategoria">
+                           <form action="" class="">
+                                <div class="form-group formBlue">
+                                <label for="categorias" class="fontGreen tituloFiltro">Categorías</label>
+                                <select class="form-control" id="categorias">
+                                  <option>Seleccionar categoría</option>
+                                  <option>Lanzamientos</option>
+                                  <option>Presentaciones</option>
+                                  <option>Prensa</option>
+                                  <option>Eventos</option>          
+                                </select>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="selectIndustria">
+                            <h5 class="fontGreen regular tituloFiltro">Industrias</h5>
+                            
+                            <form action="">
+                                <label class="checkbox"><img src="img/icono-farmaceutica.png" alt="industria-farmaceutica">Industria Farmacéutica
+                                    <input type="checkbox">
+                                    <span class="check"></span>
+                                </label>
+                                <label class="checkbox"><img src="img/icono-alimenticia.png" alt="industria-alimenticia">Industria Alimenticia
+                                    <input type="checkbox">
+                                    <span class="check"></span>
+                                </label>
+                                <label class="checkbox"><img src="img/icono-vitivinicolapng.png" alt="industria-vitivinícola">Industria Vitivinícola
+                                    <input type="checkbox">
+                                    <span class="check"></span>
+                                </label>
+                                <label class="checkbox"><img src="img/icono-hospitales.png" alt="hospitales">Hospitales
+                                    <input type="checkbox">
+                                    <span class="check"></span>
+                                </label>
+                            </form>
+                            
+                        </div>
+                        
+                        <div class="selectArchivo">
+                            <h5 class="fontGreen regular tituloFiltro">Archivos</h5>
+                            <ul>
+                                <li><a href="#">December 2020</a></li>
+                                <li><a href="#">November 2020</a></li>
+                                <li><a href="#">October 2020</a></li>
+                                <li><a href="#">May 2020</a></li>
+                                <li><a href="#">March 2020</a></li>
+                                <li><a href="#">January 2020</a></li>
+                                <li><a href="#">December 2019</a></li>
+                                <li><a href="#">November 2019</a></li>
+                                <li><a href="#">October 2019</a></li>
+                                <li><a href="#">May 2019</a></li>
+                                <li><a href="#">August 2015</a></li>
+                            </ul>
+                        </div>
+                   </div>
+                    
+                </aside>
+               
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 contentNews">
+                 
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+                          <img src="img/novedades/1.jpg" class="card-img-top" alt="news1">
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">Etif 2010: Gracias por visitarnos en nuestro stand</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+                          <img src="img/novedades/2.jpg" class="card-img-top" alt="news1">
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">4 Steps to Prepare for USP <i class="fas fa-angle-left"></i>800<i class="fas fa-angle-right"></i> Compliance</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+<!--                          <img src="img/novedades/1.jpg" class="card-img-top" alt="news1">-->
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">Boletín Agosto 2009</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+                          <img src="img/novedades/3.jpg" class="card-img-top" alt="news1">
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">ExpoFyBi 2009</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+                          <img src="img/novedades/5.jpg" class="card-img-top" alt="news1">
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">What You Need to Know About Validated Sterile Wiping & How to Make It More Effective</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+                          <img src="img/novedades/6.jpg" class="card-img-top" alt="news1">
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">When should I use presaturated wipes instead of dry wipes and spray?</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+                          <img src="img/novedades/2.jpg" class="card-img-top" alt="news1">
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">ExpoFyBi 2009</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+<!--                          <img src="img/novedades/1.jpg" class="card-img-top" alt="news1">-->
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">Will Today’s Approach to Contamination Control Work Tomorrow?</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+                          <img src="img/novedades/1.jpg" class="card-img-top" alt="news1">
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">BIOMEDevice 5/15 - 5/16</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+                          <img src="img/novedades/2.jpg" class="card-img-top" alt="news1">
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">ExpoFyBi 2009</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+<!--                          <img src="img/novedades/1.jpg" class="card-img-top" alt="news1">-->
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">Will Today’s Approach to Contamination Control Work Tomorrow?</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  
+                  <div class="col mb-4 contentCard">
+                   <a href="nota.html">
+                        <div class="card">
+                          <img src="img/novedades/1.jpg" class="card-img-top" alt="news1">
+                          <div class="card-body cardNews">
+                            <h3 class="regular fontBlue">Industria Alimenticia</h3>
+                            <h2 class="card-title bold fontBlue">BIOMEDevice 5/15 - 5/16</h2>
+                            <p class="card-text fontGrey">Oct 2009 <span>| </span>Evento</p>
+                            <button class="fontGreen">Leer Más <i class="fas fa-caret-right "></i></button>
+                          </div>
+                        </div>
+                    </a>
+                  </div>
+                  
+                </div>
+                <div class="paginacion">
+                    <nav>
+                        <ul>
+                            <li><a class="active" href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                    </nav>
+                    <span>Mostrando 12 de 60 resultados.</span>
+                </div>
+            </section>
+            
+            
+       </div>
+    </main>
+    <footer class="bgBlue">
+        <div class="footerBox fontWhite">
+            <img src="img/logo-blanco.png" alt="Logo Eticor">
+            <nav>
+                <ul>
+                    <li><a class="fontWhite mayuscula" href="index.html">Inicio</a></li>
+                    <li><a class="fontWhite mayuscula" href="industria-alimenticia.html">Industria Alimenticia</a></li>
+                    <li><a class="fontWhite mayuscula" href="industria-farmaceutica.html">Industria Farmacéutica</a></li>
+                    <li><a class="fontWhite mayuscula" href="industria-vitivinicola.html">Industria Vitivinícola</a></li>
+                    <li><a class="fontWhite mayuscula" href="">Hospitales</a></li>
+                    <li><a class="fontWhite mayuscula" href="">Productos</a></li>
+                    <li><a class="fontWhite mayuscula" href="">Empresa</a></li>
+                    <li><a class="fontWhite mayuscula" href="">Novedades</a></li>
+                </ul>
+            </nav>
+            <div class="footerContacto">
+                <ul>
+                    <li>
+                        <h5>Dirección</h5>
+                        <p>Av. Córdoba 3515 - Piso 9 "C"<br>
+                        (C1188AAB) CABA, Argentina</p>
+                    </li>
+                    <li>
+                        <h5>Tel / Fax</h5>
+                        <p>+54 11 4961 7044</p>
+                    </li>
+                    <li>
+                        <h5>E-mail</h5>
+                        <a href="mailto:info@eticor.com.ar" class="fontWhite">info@eticor.com.ar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© Eticor S.A. 2020 - Todos los derechos reservados.</p>
+            </div>
+<!--            <a class="topButton fontWhite" href="#inicio"><i class="fas fa-chevron-up"></i></a>-->
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+</body>
+</html>
